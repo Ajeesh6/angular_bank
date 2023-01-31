@@ -5,14 +5,14 @@
         <h2 class="text-center">Sign in to your account</h2>
         <div class="mt-2 p-2 fw-bold fs-5">
             <label for="a1">Account number</label>
-            <input (change)="acnoChange($event)" type="text " id="acid" name="acnum1" [class]="iclass">
+            <input #acno type="text " id="acid" name="acnum1" [class]="iclass">
         </div>
         <div class="mt-2 p-2 fw-bold fs-5">
             <label for="c1">Password</label>
-            <input (change)="paswChange($event)" type="password" id="psw1" name="paswrd1" class="form-control  ">
+            <input #psw  type="password" id="psw1" name="paswrd1" class="form-control  ">
         </div>
         <div class="mt-2 p-2 text-center fw-bold">
-            <button type="button" (click)="login()" class="btn btn-outline-light"  style="width: 100px;">login</button>
+            <button type="button" (click)="login(acno,psw)" class="btn btn-outline-light"  style="width: 100px;">login</button>
          
 
         </div>
