@@ -10,8 +10,8 @@ export class LoginComponent implements OnInit {
   data="your perfect banking patner"
   iclass="form-control"
 
-  // acno:any
-  // pasw:any
+  acno:any
+  pasw:any
   
   userDetails:any={
     1000:{acno:1000,username:"anu",password:"abc123",balance:0},
@@ -26,28 +26,9 @@ export class LoginComponent implements OnInit {
     
   }
 
-  // login(){
-  //   var acnum=this.acno
-  //   var psw=this.pasw
-  //   var userDetails=this.userDetails
-  //   if(acnum in userDetails){
-  //     if(psw==userDetails[acnum]["password"]){
-  //       alert("login success")
-  //     }
-  //     else{
-  //       alert("incurrect password")
-  //     }
-
-  //   }
-  //   else{
-  //     alert("account num incurrect or not registerd yet")
-  //   }
-  // }
-
-  login(a:any,b:any){
-
-    var acnum=a.value
-    var psw=b.value
+  login(){
+    var acnum=this.acno
+    var psw=this.pasw
     var userDetails=this.userDetails
     if(acnum in userDetails){
       if(psw==userDetails[acnum]["password"]){
@@ -62,6 +43,25 @@ export class LoginComponent implements OnInit {
       alert("account num incurrect or not registerd yet")
     }
   }
+
+  // login(a:any,b:any){
+
+  //   var acnum=a.value
+  //   var psw=b.value
+  //   var userDetails=this.userDetails
+  //   if(acnum in userDetails){
+  //     if(psw==userDetails[acnum]["password"]){
+  //       alert("login success")
+  //     }
+  //     else{
+  //       alert("incurrect password")
+  //     }
+
+  //   }
+  //   else{
+  //     alert("account num incurrect or not registerd yet")
+  //   }
+  // }
  
   // acnoChange(event:any){
   //   this.acno=event.target.value;
