@@ -75,4 +75,11 @@ to store redentent datas and methods
  -ng g s service_name
 
 
+ Angular Directives - to manipulate DashboardComponent
+ ------------------------------
+
+ 1.component Directives
+ 2.structural Directives  *ngFor
+
+
 

@@ -1,21 +1,21 @@
 <div class="container w-50 mt-5 ">
     
-    <form action="" class="border  p-5 text-white " style="border-radius:20px;background-color: rgba(0, 0, 0, 0.3);">
+    <form action="" (ngSubmit)="register()" class="border  p-5 text-white " style="border-radius:20px;background-color: rgba(0, 0, 0, 0.3);">
         <h2 class="text-center">Sign Up To Bank</h2>
         <div class="mt-2 p-2 fw-bold fs-5">
 
-            <input type="text " id="unamid" name="usern" placeholder="Enter Username" class="form-control  ">
+            <input type="text " [(ngModel)]="uname" id="unamid" name="usern" placeholder="Enter Username" class="form-control  ">
         </div>
         <div class="mt-2 p-2 fw-bold fs-5">
            
-            <input  type="text " id="acid" name="acnum1" placeholder="Enter Account Number" class="form-control  ">
+            <input  type="text " [(ngModel)]="acno" id="acid" name="acnum1" placeholder="Enter Account Number" class="form-control  ">
         </div>
         <div class="mt-2 p-2 fw-bold fs-5">
             
-            <input   type="password" id="psw1" name="paswrd1" placeholder="Enter Password" class="form-control  ">
+            <input   type="password" [(ngModel)]="pasw" id="psw1" name="paswrd1" placeholder="Enter Password" class="form-control  ">
         </div>
         <div class="mt-2 p-2 text-center fw-bold">
-            <button type="button" (click)="register()" class="btn btn-outline-light"  style="width: 100px;">Register</button>
+            <button type="submit"  class="btn btn-outline-light"  style="width: 100px;">Register</button>
          
 
         </div>
