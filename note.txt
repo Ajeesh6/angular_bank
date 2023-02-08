@@ -72,14 +72,32 @@ Angular Services
 to store redentent datas and methods
 -all the components can access datas and methods defined in service file easily
 
- -ng g s service_name
+-ng g s service_name
 
 
- Angular Directives - to manipulate DashboardComponent
- ------------------------------
+Angular Directives - to manipulate DashboardComponent
+------------------------------
 
  1.component Directives
  2.structural Directives  *ngFor
 
+ 
+validation in angular
+---------------------
+from creation in angular
+
+1.template driven from
+2.model driven form   
+      
+2.1-reactive form - to create model of form
+reactive form contain group,array,control
+-ReactiveFormsModule          -module
+-FormBuilder                  -class used to create model form
+-group                        -method to create model
+       
+       
+
+
+ 
 
 
